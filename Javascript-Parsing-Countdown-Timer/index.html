@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerem Apaydın</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1><span id="hour">10</span>:<span id="minute">00</span>:<span id="second">00</span></h1>
+        <form>
+            <label>
+                Hour
+                <input id="h" type="number" min="0" max="23" value="00"/>
+            </label>
+            <label>
+                Minute
+                <input id="m" type="number" min="0" max="59" value="00"/>
+            </label>
+            <label>
+                Second
+                <input id="s" type="number" min="0" max="59" value="00"/>
+            </label>
+        </form>
+        <button id="start">Start</button>
+        <button id="reset">Reset</button>
+        
+        <div class="table">
+            <table style="margin-top: 3rem;">
+                <tr>
+                    <th >Updated Time</th>
+                    <th >USD</th>
+                    <th>EURO</th>
+                    <th>GBP</th>
+
+                </tr>
+                <tr>
+                    <td id="time"></td>
+                    <td id="usd" ></td>
+                    <td id="euro"></td>
+                    <td id="gbp"></td>
+                </tr>
+            </table>
+        </div>    
+    </div>
+    
+
+
+    <script src="script.js"></script>
+    <script src="api.js"></script>
+</body>
+</html>
